@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/navigation_play"
+        android:icon="@drawable/selector_play"
+        android:contentDescription="@string/description_play_pause"
+        app:showAsAction="ifRoom"
+        android:title="@null"/>
+    <item android:id="@id/navigation_skip_next"
+        android:icon="@drawable/ic_skip_next"
+        android:contentDescription="@string/description_skip_next"
+        app:showAsAction="ifRoom"
+        android:title="@null"/>
+    <item android:id="@id/navigation_like"
+        android:icon="@drawable/selector_like"
+        android:contentDescription="@string/description_like"
+        app:showAsAction="ifRoom"
+        android:title="@null"/>
+</menu>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    Copyright 2021 Tran Minh Khoa
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- Text sizes -->
+    <dimen name="textHeader1">36sp</dimen>
+    <dimen name="textHeader2">24sp</dimen>
+    <dimen name="textHeader3">20sp</dimen>
+    <dimen name="textBody1">18sp</dimen>
+    <dimen name="textBody2">16sp</dimen>
+    <dimen name="textSubtitle1">15sp</dimen>
+    <dimen name="textSubtitle2">14sp</dimen>
+    <dimen name="textCaption">12sp</dimen>
+
+    <!-- Margin sizes -->
+    <dimen name="margin3XL">64dp</dimen>
+    <dimen name="margin2XL">36dp</dimen>
+    <dimen name="marginXL">28dp</dimen>
+    <dimen name="marginL">24dp</dimen>
+    <dimen name="marginM">20dp</dimen>
+    <dimen name="marginS">16dp</dimen>
+    <dimen name="marginXS">12dp</dimen>
+    <dimen name="margin2XS">8dp</dimen>
+    <dimen name="margin3XS">4dp</dimen>
+
+    <!-- Padding sizes -->
+    <dimen name="padding3XL">36dp</dimen>
+    <dimen name="padding2XL">28dp</dimen>
+    <dimen name="paddingXL">24dp</dimen>
+    <dimen name="paddingL">20dp</dimen>
+    <dimen name="paddingM">16dp</dimen>
+    <dimen name="paddingS">8dp</dimen>
+    <dimen name="paddingXS">4dp</dimen>
+    <dimen name="padding2XS">2dp</dimen>
+    <dimen name="padding3XS">1dp</dimen>
+
+    <!-- Button sizes -->
+    <dimen name="button3XL">48dp</dimen>
+    <dimen name="button2XL">40dp</dimen>
+    <dimen name="buttonXL">36dp</dimen>
+    <dimen name="buttonL">32dp</dimen>
+    <dimen name="buttonM">25dp</dimen>
+    <dimen name="buttonS">24dp</dimen>
+    <dimen name="buttonXS">20dp</dimen>
+    <dimen name="button2XS">16dp</dimen>
+    <dimen name="button3XS">12dp</dimen>
+
+    <!-- Stroke sizes -->
+    <dimen name="strokeL">4dp</dimen>
+    <dimen name="strokeM">2dp</dimen>
+    <dimen name="strokeS">1dp</dimen>
+
+    <!-- Custom Dimensions -->
+    <dimen name="size_logo">200dp</dimen>
+
+    <dimen name="size_navigation_fab">50dp</dimen>
+    <dimen name="size_navigation_trackbar">75dp</dimen>
+    <dimen name="thickness_navigation_trackbar">5dp</dimen>
+    <dimen name="radius_navigation_fab_corner">25dp</dimen>
+
+    <dimen name="radius_module">20dp</dimen>
+    <dimen name="size_module_art">90dp</dimen>
+    <dimen name="size_module_artist">50dp</dimen>
+
+    <dimen name="size_play_button_giant">100dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+</resources>

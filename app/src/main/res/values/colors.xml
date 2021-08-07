@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2021 Tran Minh Khoa
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+
+    <color name="background">#FF0A1B26</color>
+
+    <!-- Used for bounds -->
+    <color name="light">#FFF2F2ED</color>
+    <color name="light_variant">#FFE0E1DC</color>
+
+    <color name="dark">#FF25333B</color>
+    <color name="dark_variant">#FF2A3F4A</color>
+
+    <color name="accent_dark">#FFF2B05E</color>
+    <color name="accent_light">#FFF2D16D</color>
+
+    <!--
+        Examples of "Interactables" are buttons, menus, etc.
+
+        Passive: not in use / not able to use
+        Active:  in use
+        Highlight:  in use and highlighted
+
+        Highlight coloring is also used together with Accent coloring
+        for borders of menus or other "interactable" areas.
+    -->
+    <color name="passive_dark">#FF5E7275</color>
+    <color name="passive_light">#FFB3C1C4</color>
+
+    <color name="active_dark">#FF24363C</color>
+    <color name="active_light">#FFCDDCDE</color>
+
+    <color name="highlight_dark">#FF26A6A6</color>
+    <color name="highlight_light">#FF22bd91</color>
+
+    <!-- Plain text -->
+    <color name="info_light">#FFE8E9E5</color>
+    <color name="info_dark">#FF21313A</color>
+
+    <color name="error_dark">#D9756C</color>
+    <color name="error_light">#F28B66</color>
+</resources>

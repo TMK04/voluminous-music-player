@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="searchbar" type="id"/>
+    <item name="searchbar_search" type="id"/>
+    <item name="searchbar_input_layout" type="id"/>
+    <item name="searchbar_input" type="id"/>
+    <item name="searchbar_voice" type="id"/>
+    <item name="searchbar_filters" type="id"/>
+
+    <item name="content" type="id"/>
+    <item name="content_inner" type="id"/>
+
+    <item name="fragment_home" type="id"/>
+    <item name="fragment_search" type="id"/>
+    <item name="fragment_library" type="id"/>
+
+    <item name="navigation" type="id"/>
+    <item name="navigation_title" type="id"/>
+    <item name="navigation_subtitle" type="id"/>
+    <item name="navigation_trackbar" type="id"/>
+    <item name="navigation_fab" type="id"/>
+    <item name="navigation_play" type="id"/>
+    <item name="navigation_skip_next" type="id"/>
+    <item name="navigation_like" type="id"/>
+
+    <item name="module_title" type="id"/>
+    <item name="module_more" type="id"/>
+    <item name="module_barrier" type="id"/>
+    <item name="module_scroll" type="id"/>
+    <item name="your_favorite_artists" type="id"/>
+    <item name="new_releases" type="id"/>
+    <item name="recommended" type="id"/>
+    <item name="discover" type="id"/>
+    <item name="following" type="id"/>
+    <item name="listening_history" type="id"/>
+    <item name="saved_playlists" type="id"/>
+    <item name="liked_songs" type="id"/>
+
+    <item name="checkbox_artists" type="id"/>
+    <item name="checkbox_songs" type="id"/>
+    <item name="label_song_length" type="id"/>
+    <item name="slider_song_length" type="id"/>
+    <item name="label_release_date" type="id"/>
+    <item name="reset_filters" type="id"/>
+
+    <item name="module_art" type="id"/>
+    <item name="module_art_title" type="id"/>
+    <item name="module_art_subtitle" type="id"/>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright 2021 Tran Minh Khoa
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- extendable Layout dimensions -->
+    <style name="FullMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="FullWrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchWidthWrapHeight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Null buttons -->
+    <style name="NullButton">
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- Text Appearances -->
+    <style name="Title" parent="FullWrapContent">
+        <item name="fontFamily">@font/trebucbd</item>
+        <item name="android:textSize">@dimen/textBody1</item>
+    </style>
+
+    <style name="Subtitle" parent="FullWrapContent">
+        <item name="android:textSize">@dimen/textSubtitle1</item>
+    </style>
+
+    <style name="SearchHint">
+        <item name="fontFamily">@font/trebucit</item>
+        <item name="android:textSize">@dimen/textBody1</item>
+    </style>
+
+    <!-- Every Activity uses ConstraintLayout -->
+    <style name="ActivityBounds" parent="FullMatchParent">
+        <item name="android:background">?attr/backgroundColor</item>
+    </style>
+
+    <!-- Navigation -->
+    <style name="NavigationTitle" parent="Title">
+        <item name="android:lines">1</item>
+        <item name="android:textSize">@dimen/textSubtitle1</item>
+    </style>
+
+    <style name="NavigationSubtitle" parent="Subtitle">
+        <item name="android:lines">1</item>
+        <item name="android:textSize">@dimen/textSubtitle2</item>
+    </style>
+
+    <!-- ModuleLayout -->
+    <style name="Module" parent="MatchWidthWrapHeight">
+        <item name="android:layout_marginHorizontal">@dimen/marginS</item>
+        <item name="android:layout_marginTop">@dimen/marginL</item>
+        <item name="android:padding">@dimen/paddingL</item>
+        <item name="android:background">@drawable/bg_module</item>
+    </style>
+
+    <style name="ModuleArtist">
+        <item name="android:shape">ring</item>
+        <item name="android:layout_width">@dimen/size_module_artist</item>
+        <item name="android:layout_height">@dimen/size_module_artist</item>
+    </style>
+
+    <style name="ModuleArt">
+        <item name="android:shape">rectangle</item>
+        <item name="android:layout_width">@dimen/size_module_art</item>
+        <item name="android:layout_height">@dimen/size_module_art</item>
+    </style>
+
+    <!-- Song/Playlist name -->
+
+    <style name="ModuleArtTitle" parent="Title">
+        <item name="android:layout_centerHorizontal">true</item>
+        <!-- Rather small -->
+        <item name="android:textSize">@dimen/textSubtitle1</item>
+    </style>
+
+    <!-- Artist name -->
+    <style name="ModuleArtSubtitle" parent="Subtitle">
+        <item name="android:layout_centerHorizontal">true</item>
+        <!-- Yes, rather small. -->
+        <item name="android:textSize">@dimen/textCaption</item>
+    </style>
+
+</resources>
