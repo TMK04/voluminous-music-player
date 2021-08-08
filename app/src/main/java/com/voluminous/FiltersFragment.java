@@ -20,14 +20,6 @@ public class FiltersFragment extends Fragment implements LabelFormatter {
     private RangeSlider slider_song_length;
     private AppCompatTextView reset_filters;
 
-    private class Filters {
-        String type;
-
-        Filters(String _type) {
-            type = _type;
-        }
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_filters, container, false);
@@ -58,10 +50,10 @@ public class FiltersFragment extends Fragment implements LabelFormatter {
         slider_song_length.setValues(30f, 600f);
     }
 
-    public Filters getFilters() {
-        return new Filters(
-                (checkbox_artists.isChecked() ? "channel" : "") +
-                    (checkbox_songs.isChecked() ? ",video" : "")
-        );
+    public String getFilters() {
+        String suffix;
+        String type = (checkbox_artists.isChecked() ? "channel" : "") + (checkbox_songs.isChecked() ? ",video" : "");
+        suffix = (type.equals("") ? "" : "&type=") + type;
+        return suffix;
     }
 }
