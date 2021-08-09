@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "989429696756",
+    "project_id": "voluminous-music-player-1",
+    "storage_bucket": "voluminous-music-player-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989429696756:android:8ecb35bdde6142970476a1",
+        "android_client_info": {
+          "package_name": "com.voluminous"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989429696756-7aa5dpio7gc8e1cbgcd02teske8l409r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDakA0HMJBx3K4lwh-O6KDczvxIqJV8AhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989429696756-7aa5dpio7gc8e1cbgcd02teske8l409r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

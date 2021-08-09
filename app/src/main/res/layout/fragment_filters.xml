@@ -2,9 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.FiltersFragment"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bg_filters">
+    android:background="@drawable/bg_surface">
 
     <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/checkbox_artists"
         android:layout_width="wrap_content"
@@ -15,7 +17,7 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         android:layout_marginEnd="@dimen/marginS"
         android:textColor="?attr/colorOnSurface"
-        android:text="Artists"
+        android:text="@string/artists"
         app:buttonTint="?attr/colorPrimary"/>
     <com.google.android.material.checkbox.MaterialCheckBox android:id="@id/checkbox_songs"
         android:layout_width="wrap_content"
@@ -24,7 +26,7 @@
         app:layout_constraintStart_toEndOf="@id/checkbox_artists"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="?attr/colorOnSurface"
-        android:text="Songs"
+        android:text="@string/songs"
         app:buttonTint="?attr/colorPrimary"/>
 
     <androidx.appcompat.widget.AppCompatTextView android:id="@id/label_song_length"
@@ -35,38 +37,29 @@
         app:layout_constraintBottom_toTopOf="@id/slider_song_length"
         android:layout_marginTop="16dp"
         android:textAlignment="center"
-        android:text="Song Length"/>
+        android:text="@string/song_length"/>
     <com.google.android.material.slider.RangeSlider android:id="@id/slider_song_length"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/label_song_length"
-        android:valueFrom="30.0"
-        android:valueTo="600.0"
-        android:stepSize="30.0"
+        android:valueFrom="0"
+        android:valueTo="2"
+        android:stepSize="1"
         app:thumbRadius="8dp"
         app:tickVisible="false"/>
-
-    <androidx.appcompat.widget.AppCompatTextView android:id="@id/label_release_date"
-        style="@style/Title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/slider_song_length"
-        android:layout_marginTop="16dp"
-        android:textAlignment="center"
-        android:text="Release Date"/>
 
     <androidx.appcompat.widget.AppCompatTextView android:id="@id/reset_filters"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/label_release_date"
+        app:layout_constraintTop_toBottomOf="@id/slider_song_length"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="32dp"
         android:background="@null"
         android:textSize="@dimen/textCaption"
         android:textColor="?attr/colorOnSurface"
-        android:text="Reset Filters"
+        android:text="@string/reset_filters"
         android:textAllCaps="false"
         android:clickable="true"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

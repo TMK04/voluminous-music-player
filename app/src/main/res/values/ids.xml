@@ -7,6 +7,11 @@
     <item name="searchbar_voice" type="id"/>
     <item name="searchbar_filters" type="id"/>
 
+    <item name="search_result_art" type="id"/>
+    <item name="search_result_title" type="id"/>
+    <item name="search_result_subtitle" type="id"/>
+    <item name="search_result_checkbox" type="id"/>
+
     <item name="content" type="id"/>
     <item name="content_inner" type="id"/>
 
@@ -43,7 +48,7 @@
     <item name="label_release_date" type="id"/>
     <item name="reset_filters" type="id"/>
 
-    <item name="module_art" type="id"/>
-    <item name="module_art_title" type="id"/>
-    <item name="module_art_subtitle" type="id"/>
+    <item name="module_item_art" type="id"/>
+    <item name="module_item_title" type="id"/>
+    <item name="module_item_subtitle" type="id"/>
 </resources>

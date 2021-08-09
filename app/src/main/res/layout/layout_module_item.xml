@@ -4,29 +4,29 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView android:id="@id/module_art"
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/module_item_art"
         android:layout_width="@dimen/size_module_art"
         android:layout_height="@dimen/size_module_art"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/module_art_title"
+        app:layout_constraintBottom_toTopOf="@id/module_item_title"
         android:clickable="true"/>
-    <TextView android:id="@id/module_art_title"
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/module_item_title"
         style="@style/Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/module_art"
+        app:layout_constraintTop_toBottomOf="@id/module_item_art"
         android:clickable="true"/>
-    <TextView android:id="@id/module_art_subtitle"
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/module_item_subtitle"
         style="@style/Subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/module_art_title"
+        app:layout_constraintTop_toBottomOf="@id/module_item_title"
         app:layout_constraintBottom_toBottomOf="parent"
         android:clickable="true"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,11 +3,12 @@ package com.voluminous;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.voluminous.R;
 
 public class ModuleLayout extends ConstraintLayout {
 
@@ -36,7 +37,6 @@ public class ModuleLayout extends ConstraintLayout {
 
 
         TextView title = (TextView) findViewById(R.id.module_title);
-        Button more = (Button) findViewById(R.id.module_more);
         RecyclerView scroll = (RecyclerView) findViewById(R.id.module_scroll);
 
         String mIdString = idToString();

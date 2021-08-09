@@ -2,7 +2,11 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/ActivityBounds">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    style="@style/ActivityBounds"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -16,6 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:boxBackgroundColor="?attr/colorPrimarySurface"
+                app:startIconCheckable="true"
                 app:startIconDrawable="@drawable/ic_search"
                 app:startIconTint="?attr/colorOnPrimarySurface"
                 app:endIconDrawable="@drawable/ic_cancel"
@@ -42,20 +47,16 @@
         app:layout_anchorGravity="bottom"
         android:paddingBottom="@dimen/margin3XL"/>
 
-    <!-- Circular Song Trackbar -->
-    <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@id/navigation_trackbar"
-        android:layout_width="wrap_content"
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView android:id="@+id/player_view"
+        android:layout_width="135dp"
         android:layout_height="wrap_content"
-        app:layout_anchor="@id/navigation_fab"
-        app:layout_anchorGravity="center"
-        app:indicatorSize="@dimen/size_navigation_trackbar"
-        app:trackThickness="@dimen/thickness_navigation_trackbar"
-        app:trackColor="?attr/colorSurface"
-        app:indicatorColor="?attr/colorPrimary"
-        app:trackCornerRadius="@dimen/thickness_navigation_trackbar"
-        android:progress="300"
-        android:max="360"
-        android:rotation="110"/>
+        android:layout_gravity="top"
+        app:layout_anchor="@id/navigation"
+        app:layout_anchorGravity="top|end"
+        app:showYouTubeButton="false"
+        app:showFullScreenButton="false"
+        app:showSeekBar="false"
+        app:showVideoDuration="false"/>
 
     <!-- Home/Library navigation -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/navigation_fab"
@@ -84,17 +85,17 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
 
-            <TextSwitcher android:id="@id/navigation_title"
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/navigation_title"
                 style="@style/NavigationTitle"
-                android:layout_width="110dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/navigation_subtitle"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintVertical_chainStyle="packed"/>
-            <TextSwitcher android:id="@id/navigation_subtitle"
+            <androidx.appcompat.widget.AppCompatTextView android:id="@id/navigation_subtitle"
                 style="@style/NavigationSubtitle"
-                android:layout_width="90dp"
+                android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

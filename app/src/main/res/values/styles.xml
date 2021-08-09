@@ -92,7 +92,7 @@
     <style name="ModuleArtTitle" parent="Title">
         <item name="android:layout_centerHorizontal">true</item>
         <!-- Rather small -->
-        <item name="android:textSize">@dimen/textSubtitle1</item>
+        <item name="android:textSize">@dimen/textSubtitle2</item>
     </style>
 
     <!-- Artist name -->
